@@ -16,6 +16,10 @@ def home(request):
     products = Product.objects.all().filter(is_available=True)
     return render(request, 'home.html', {'products': products})
 
+def add(a,b):
+    sum = a+b
+    return sum
+
 class ProductList(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
