@@ -24,6 +24,10 @@ def sub(a, b):
     add = a + b
     return add
 
+def mul(a,b):
+    m = a*b
+    return m
+
 class ProductList(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
