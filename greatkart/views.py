@@ -20,6 +20,10 @@ def add(a,b):
     sum = a+b
     return sum
 
+def sub(a, b):
+    add = a + b
+    return add
+
 class ProductList(generics.ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
